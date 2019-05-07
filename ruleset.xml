@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="phpBB extension coding standard" namespace="phpbb">
+<ruleset name="phpBB extension coding standard" namespace="Phpbb">
 	<description>phpBB extension coding standard</description>
 
 	<!--
@@ -25,8 +25,9 @@
 		2.i. Variable/Function/Class Naming
 		http://area51.phpbb.com/docs/32x/coding-guidelines.html#namingvars
 	-->
-	<!-- TODO: create a sniff that checks for lowercase underscored variable names -->
-	<!-- TODO: create a sniff that checks for lowercase underscored function/method names -->
+	<!-- variable names are checked using Phpbb.NamingConventions.LowercaseUnderscoredVariables -->
+	<!-- function names are checked using Phpbb.NamingConventions.LowercaseUnderscoredFunctions -->
+	<!-- class names are checked using Phpbb.NamingConventions.LowercaseUnderscoredClasses -->
 	<rule ref="Generic.Files.OneClassPerFile"/>
 	<rule ref="Generic.Files.OneInterfacePerFile"/>
 	<rule ref="Generic.Files.LowercasedFilename"/>
